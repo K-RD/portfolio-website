@@ -43,11 +43,16 @@ ul>li{
     padding: 10px 0;
 }
 ul>li:hover{
+    cursor: pointer;
     color: rgb(79, 70, 229);
-    /* background: rgb(162, 159, 226); */
+    background: rgba(59, 73, 223, 0.1);
+    border-radius: 10px;
+    transition-duration: 500ms;
+    text-decoration: underline;
 }
 .logo-boundary{
-    border: 5px solid #000;
+    border: 2px solid #000;
+    background: #000;
     border-radius: 10%;
     display: block;
     width: 60px;
@@ -55,5 +60,38 @@ ul>li:hover{
 }
 .logo-word{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
     font-size: 15px;
+}
+.mode{
+    flex: 0.5;
+}
+.toggle-mode-btn{
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+}
+/******************************************************/
+/* Header dark mode styling                           */
+/******************************************************/
+
+.header-dark{
+    background: #000;
+    color: aliceblue;
+}
+.header-dark .logo-boundary{
+    border: 2px solid #fff;
+}
+.header-dark ul>li{
+    color: rgb(181, 178, 235);
+}
+.header-dark ul>li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fff;
+    background: rgb(79,70,229);
+    border-radius: 10px;
+    transition-duration: 500ms;
 }
