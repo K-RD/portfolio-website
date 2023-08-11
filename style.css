@@ -1,0 +1,59 @@
+/******************************************************/
+/* basic styling                                      */
+/******************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: comic;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/******************************************************/
+/* Header light mode styling                           */
+/******************************************************/
+header{
+    /* border: 2px solid rebeccapurple; */
+    padding: 15px 0;
+    border-bottom: 2px saddlebrown solid;
+}
+.header-container{
+    display: flex;
+}
+.logo-container{
+    flex: 1;
+    margin: 0 auto;
+    text-align: center;
+}
+ul{
+    flex: 2;
+    text-align: center;
+    /* padding: 5px 0; */
+    display: flex;
+    list-style-type: none;
+    /* border: 2px solid gray; */
+}
+ul>li{
+    flex:1;
+    padding: 10px 0;
+}
+ul>li:hover{
+    color: rgb(79, 70, 229);
+    /* background: rgb(162, 159, 226); */
+}
+.logo-boundary{
+    border: 5px solid #000;
+    border-radius: 10%;
+    display: block;
+    width: 60px;
+    height: 40px;
+}
+.logo-word{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
