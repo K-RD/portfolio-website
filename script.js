@@ -1,10 +1,11 @@
 //Toggle dark mode
 function toggleMode() {
     //Header
-    let head=document.getElementsByTagName('header');
-    if (head[0].classList.contains("header-dark")) {
-        head[0].classList.remove("header-dark");
-    } else {
-        head[0].classList.add("header-dark");
-    }
+    let head=document.getElementsByTagName("header");
+    head[0].classList.toggle("header-dark");
+
+    //cover
+    let coverSection=document.getElementById("cover");
+    coverSection.classList.toggle("cover-dark");
+
 }

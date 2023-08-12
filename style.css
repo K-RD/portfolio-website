@@ -28,7 +28,8 @@ header{
     transition: 0.9s;
     /* border: 2px solid rebeccapurple; */
     padding: 15px 0;
-    border-bottom: 2px #0000004e solid;
+    border: 2px #0000004e solid;
+    border: 2px 0;
     box-shadow: 0 10px 15px -3px rgba(0,0,0, 0.1), 0 4px 6px -2px rgba(0,0,0, 0.05), 0 0 0 1px rgba(0,0,0, 0.1);;
 }
 .header-container{
@@ -151,6 +152,7 @@ input:checked + .slider::before{
 
 .cover{
     /* border: 1px solid red; */
+    transition: 0.9s;
 }
 
 .cover-fill-top{
@@ -160,4 +162,12 @@ input:checked + .slider::before{
 .cover-fill-bg{
     height: 1000px;
     background: rgb(245, 245, 245);
+    transition: 0.9s;
+}
+
+/* cover section dark mode styling                   */
+.cover-dark> .cover-fill-bg{
+    background: #000;
+    transition: 0.9s;
+
 }
