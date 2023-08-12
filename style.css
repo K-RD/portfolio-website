@@ -1,4 +1,11 @@
 /******************************************************/
+/*           basic styling                            */
+/*           1.Header                                 */
+/*           2.Cover Section                          */
+/******************************************************/
+
+
+/******************************************************/
 /* basic styling                                      */
 /******************************************************/
 
@@ -15,7 +22,7 @@
 
 
 /******************************************************/
-/* Header light mode styling                           */
+/* 1.Header light mode styling                           */
 /******************************************************/
 header{
     transition: 0.9s;
@@ -114,7 +121,7 @@ input:checked + .slider::before{
     transition:0.4s;
 }
 /******************************************************/
-/* Header dark mode styling                           */
+/* 1.b. Header dark mode styling                           */
 /******************************************************/
 
 .header-dark{
@@ -136,4 +143,21 @@ input:checked + .slider::before{
     background: rgb(79,70,229);
     border-radius: 10px;
     transition-duration: 500ms;
+}
+
+/******************************************************/
+/* 2.Cover Section light mode styling                 */
+/******************************************************/
+
+.cover{
+    /* border: 1px solid red; */
+}
+
+.cover-fill-top{
+    height: 150px;
+    background: rgb(190,195,198);
+}
+.cover-fill-bg{
+    height: 1000px;
+    background: rgb(245, 245, 245);
 }
