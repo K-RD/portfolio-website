@@ -31,7 +31,7 @@ header{
     padding: 15px 0;
     border: 2px #0000004e solid;
     border-width: 2px 0;
-    box-shadow: 0 10px 15px -3px rgba(0,0,0, 0.1), 0 4px 6px -2px rgba(0,0,0, 0.05), 0 0 0 1px rgba(0,0,0, 0.1);;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0, 0.1), 0 4px 6px -2px rgba(0,0,0, 0.05), 0 0 0 1px rgba(0,0,0, 0.1);
 }
 .header-container{
     display: flex;
@@ -130,7 +130,7 @@ input:checked + .slider::before{
     transition: 0.9s;
     background: #000;
     color: aliceblue;
-    box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.9), 0 4px 6px -2px rgba(255,255,255, 0.05), 0 0 0 1px rgba(255,255,255, 0.9);;
+    box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.9), 0 4px 6px -2px rgba(255,255,255, 0.05), 0 0 0 1px rgba(255,255,255, 0.9);
 }
 .header-dark .logo-boundary{
     border: 2px solid #fff;
@@ -179,8 +179,8 @@ input:checked + .slider::before{
 .profile{
     position: absolute;
     top: 72px;
-    /* background: rgba(0, 255, 255, 0.5);
-    border: 1px solid blue; */
+    /*background: rgba(0, 255, 255, 0.5);*/
+    /*border: 1px solid blue;*/
     height: 500px;
     width: 100vw;
 }
@@ -210,8 +210,8 @@ input:checked + .slider::before{
 }
 .profile-top-end{
     background: #fff;
-    /*border: 1px solid green;*/
-    height: 100px;
+    /*border: 5px solid green;*/
+    /*height: 100px;*/
     border-radius: 10px 10px 0 0;
 }
 .img-bg{
@@ -229,7 +229,7 @@ input:checked + .slider::before{
     background: #fff;
     height: 210px;
     padding: 20px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .profile-mid-container{
     text-align: center;
@@ -241,4 +241,24 @@ input:checked + .slider::before{
 }
 .profile-mid-container>p{
     margin-bottom: 16px;
+}
+.profile-social-links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.profile-social-links> a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.51);
+}
+.profile-social-links> a:hover{
+    color: rgb(79, 70, 229);
+}
+.profile-social-links> svg{
+    position: absolute;
+    transform: rotate(180deg);
+}
+svg:not(:root){
+    overflow: visible;
 }
